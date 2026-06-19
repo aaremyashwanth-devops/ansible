@@ -3,10 +3,10 @@
   connection: local
   become: yes
   tasks:
-    -name: local
-    vars:
-      course: "DevOps"
-    ansible.builtin.debug:
-      meg: "i m traning at course {{ course }}"
+    - name: local
+      vars:
+       course: "DevOps"
+      ansible.builtin.debug:
+       msg: "i m traning at course {{ course }}"
 
     
