@@ -7,6 +7,6 @@
       vars:
         course: "DevOps"
       ansible.builtin.debug:
-      mes: "i m traning at course {{ course }}"
+        meg: "i m traning at course {{ course }}"
 
     
