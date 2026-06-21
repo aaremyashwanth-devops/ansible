@@ -1,0 +1,10 @@
+- name: play variable
+  hosts: local
+  connection: local
+  vars:
+    firstame: yashwanth
+    lastname: aarem
+  tasks:
+    ansible.builtin.debug:
+    msg: {{ firstame }}
+   
