@@ -1,0 +1,11 @@
+- name: task variable
+  hosts: local
+  connection: local
+  tasks:
+  - name: task variable
+    vars:
+      firstame: aarem
+      lastname: yashwanth
+    ansible.builtin.debug:
+     msg: "{{ lastname }} |
+             {{ firstame }}"
