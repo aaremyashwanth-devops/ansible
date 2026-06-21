@@ -1,0 +1,7 @@
+- name: inventory variable
+  hosts: local
+  connection: local
+  tasks:
+  - name: inventory variable
+    ansible.builtin.debug:
+     msg: {{ city }}
