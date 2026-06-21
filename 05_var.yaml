@@ -2,9 +2,10 @@
   hosts: local
   connection: local
   vars:
-    firstame: yashwanth
+    firstame: "yashwanth"
     lastname: aarem
   tasks:
+  - name: print variable
     ansible.builtin.debug:
-    msg: {{ firstame }}
+     msg: {{ firstame }}
    
