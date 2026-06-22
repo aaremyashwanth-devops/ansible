@@ -1,12 +1,16 @@
-- name: promt variable
+- name: prompt variable
   hosts: local
   connection: local
   vars_prompt:
-  - name: place
+  - name: username
+    promt: where are you from
+    private: false
+
+  - name: password
     promt: where are you from
     private: true
 
   tasks:
-  - name: promt
+  - name: prompt
     ansible.builtin.debug:
-      msg: "{{ place }}"
+      msg: "{{ username }}"
