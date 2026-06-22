@@ -1,7 +1,7 @@
 - name: promt variable
   hosts: local
   connection: local
-  vars:
+  vars_promt:
   - name: place
     promt: where are you from
     private: true
