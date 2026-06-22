@@ -1,0 +1,10 @@
+- name: condtion
+  hosts: local
+  connection: local
+  tasks:
+  - name: condition
+    vars:
+      fruits: apple
+    ansible.builtin.debug:
+      msg: "{{ fruits}}"
+    when: 1 < 2
