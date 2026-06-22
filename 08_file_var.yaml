@@ -4,5 +4,6 @@
   vars_files:
   - course.yaml
   tasks:
+  - name: file variable
     ansible.builtin.debug:
      msg: "{{ course }}"
