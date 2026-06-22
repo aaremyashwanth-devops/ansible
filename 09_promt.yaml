@@ -7,10 +7,10 @@
     private: false
 
   - name: password
-    prompt: where are you from
+    prompt: where are you going
     private: true
 
   tasks:
   - name: prompt
     ansible.builtin.debug:
-      msg: "{{ username }}"
+      msg: "{{ username }} next {{ password }}"
