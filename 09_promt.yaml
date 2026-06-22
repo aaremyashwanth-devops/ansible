@@ -1,0 +1,11 @@
+- name: promt variable
+  hosts: local
+  connection: local
+  vars:
+  - name: city
+    promt: where are you from
+    private: true
+
+  tasks:
+    ansible.builtin.debug:
+      msg: "{{ city }}"
