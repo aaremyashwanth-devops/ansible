@@ -7,4 +7,4 @@
       fruits: apple
     ansible.builtin.debug:
       msg: "{{ fruits}}"
-    when: 1 < 2
+    when: 1 > 2
