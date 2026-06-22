@@ -7,5 +7,6 @@
     private: true
 
   tasks:
+  - name: promt
     ansible.builtin.debug:
       msg: "{{ city }}"
