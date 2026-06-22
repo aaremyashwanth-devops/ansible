@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  - name: city
+  - name: place
     promt: where are you from
     private: true
 
