@@ -9,4 +9,4 @@
   tasks:
   - name: promt
     ansible.builtin.debug:
-      msg: "{{ city }}"
+      msg: "{{ place }}"
