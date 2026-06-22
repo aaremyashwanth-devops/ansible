@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
-  - name: loops
+  - name: print names
     ansible.builtin.debug:
-     msg: "{{ items }}"
+     msg: "{{ item }}"
     loops:
     - computer
     - mouse
